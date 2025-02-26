@@ -1,0 +1,10 @@
+LANGUAGE ruby
+
+TELEMETRY tlm.txt
+COMMANDS cmd.txt
+
+# Ignored Parameters
+IGNORE_PARAMETER PKTID
+
+# Ignored Items
+IGNORE_ITEM PKTID
