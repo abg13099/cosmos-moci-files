@@ -1,11 +1,6 @@
 # Set VARIABLEs here to allow variation in your plugin
 
 VARIABLE mocisat_target_name MOCISAT
-VARIABLE ip host.docker.internal
-VARIABLE writePort 8080
-VARIABLE readPort 8081
-VARIABLE writeTimeout 10.0
-VARIABLE readTimeout nil
 
 TARGET MOCISAT <%= mocisat_target_name %>
 INTERFACE <%= mocisat_target_name %>_INT tcpip_client_interface.rb <%= ip %> <%= writePort %> <%= readPort %> <%= writeTimeout %> <%= readTimeout %>  #no protocols yet
